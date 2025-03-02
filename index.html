@@ -1,18 +1,259 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>playful-explorations</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-    <meta property="og:image" content="/og-image.png" />
+    <title>John Doe - Portfolio</title>
+    <meta name="description" content="Portfolio of John Doe, Frontend Developer & UI Designer" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
   </head>
 
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <div id="root">
+      <!-- Header -->
+      <header class="header">
+        <div class="container header-container">
+          <h1 class="logo">John Doe</h1>
+          <nav class="main-nav">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </nav>
+          <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title">Frontend Developer & UI Designer</h1>
+            <p class="hero-description">
+              I build beautiful, responsive websites with modern technologies that help businesses achieve their goals.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">View My Work</a>
+              <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-grid">
+            <div class="section-header">
+              <h2 class="section-title">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                About Me
+              </h2>
+              <p class="section-subtitle">
+                Get to know me and my background
+              </p>
+            </div>
+            <div class="section-content">
+              <p class="about-text">
+                Hello! I'm John, a passionate frontend developer with 5 years of experience creating
+                modern and responsive web applications. I specialize in HTML, CSS, JavaScript, and
+                creating beautiful user interfaces.
+              </p>
+              <p class="about-text">
+                My journey in web development started when I was in college, and I've been hooked
+                ever since. I love the perfect blend of technical problem-solving and creative
+                design that comes with frontend work.
+              </p>
+              <p class="about-text">
+                When I'm not coding, you can find me hiking, reading sci-fi novels, or experimenting
+                with new recipes in the kitchen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <div class="section-grid">
+            <div class="section-header">
+              <h2 class="section-title">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                My Projects
+              </h2>
+              <p class="section-subtitle">
+                Some of my recent work
+              </p>
+            </div>
+            <div class="projects-grid">
+              <div class="project-card">
+                <div class="project-image">
+                  <span class="project-placeholder">Project 1</span>
+                </div>
+                <div class="project-content">
+                  <h3 class="project-title">Project Title 1</h3>
+                  <p class="project-description">
+                    A brief description of this amazing project and the technologies used.
+                  </p>
+                  <a href="#" class="btn btn-sm">View Project</a>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-image">
+                  <span class="project-placeholder">Project 2</span>
+                </div>
+                <div class="project-content">
+                  <h3 class="project-title">Project Title 2</h3>
+                  <p class="project-description">
+                    A brief description of this amazing project and the technologies used.
+                  </p>
+                  <a href="#" class="btn btn-sm">View Project</a>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-image">
+                  <span class="project-placeholder">Project 3</span>
+                </div>
+                <div class="project-content">
+                  <h3 class="project-title">Project Title 3</h3>
+                  <p class="project-description">
+                    A brief description of this amazing project and the technologies used.
+                  </p>
+                  <a href="#" class="btn btn-sm">View Project</a>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-image">
+                  <span class="project-placeholder">Project 4</span>
+                </div>
+                <div class="project-content">
+                  <h3 class="project-title">Project Title 4</h3>
+                  <p class="project-description">
+                    A brief description of this amazing project and the technologies used.
+                  </p>
+                  <a href="#" class="btn btn-sm">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills">
+        <div class="container">
+          <div class="section-grid">
+            <div class="section-header">
+              <h2 class="section-title">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                Skills
+              </h2>
+              <p class="section-subtitle">
+                Technologies I work with
+              </p>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-item">HTML5</div>
+              <div class="skill-item">CSS3</div>
+              <div class="skill-item">JavaScript</div>
+              <div class="skill-item">Java</div>
+              <div class="skill-item">Spring Boot</div>
+              <div class="skill-item">Responsive Design</div>
+              <div class="skill-item">UI/UX</div>
+              <div class="skill-item">Git</div>
+              <div class="skill-item">RESTful APIs</div>
+              <div class="skill-item">SQL</div>
+              <div class="skill-item">Figma</div>
+              <div class="skill-item">Bootstrap</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-grid">
+            <div class="section-header">
+              <h2 class="section-title">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                Contact
+              </h2>
+              <p class="section-subtitle">
+                Get in touch with me
+              </p>
+            </div>
+            <div class="section-content">
+              <div class="contact-card">
+                <p class="contact-intro">
+                  Interested in working together? Feel free to reach out to me directly at <a href="mailto:john@example.com" class="contact-email">john@example.com</a> or use the form below.
+                </p>
+                <form id="contactForm" class="contact-form">
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label for="name" class="form-label">Name</label>
+                      <input 
+                        id="name" 
+                        type="text" 
+                        class="form-input" 
+                        placeholder="Your name" 
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="email" class="form-label">Email</label>
+                      <input 
+                        id="email" 
+                        type="email" 
+                        class="form-input" 
+                        placeholder="your.email@example.com" 
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea 
+                      id="message" 
+                      rows="5" 
+                      class="form-input" 
+                      placeholder="Your message here..."
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                  <div id="formStatus" class="form-status"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <p class="footer-copyright">© 2023 John Doe. All rights reserved.</p>
+            <div class="footer-links">
+              <a href="#" class="footer-link">GitHub</a>
+              <a href="#" class="footer-link">LinkedIn</a>
+              <a href="#" class="footer-link">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="toast" class="toast">
+      <div id="toastMessage" class="toast-message"></div>
+    </div>
   </body>
 </html>
