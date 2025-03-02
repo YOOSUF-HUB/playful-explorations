@@ -1,10 +1,10 @@
 
-import { toast as sonnerToast, type Toast as SonnerToast, useToast as useSonnerToast } from "sonner";
+import { toast as sonnerToast, type ToastOptions, useToaster } from "sonner";
 
-type ToastProps = Omit<SonnerToast, "id">;
+type ToastProps = ToastOptions;
 
 export function toast(props: ToastProps) {
-  return sonnerToast(props);
+  return sonnerToast(props.title || "", props);
 }
 
-export { useSonnerToast as useToast };
+export { useToaster as useToast };
